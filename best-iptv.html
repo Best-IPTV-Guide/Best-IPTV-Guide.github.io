@@ -3,39 +3,91 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Best IPTV Providers</title>
+<title>Best IPTV Providers 2026 - Best IPTV Guide</title>
 
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Arial, sans-serif;
     background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-    color: white;
+    color: #ffffff;
 }
 
+/* NAVBAR */
+nav {
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(8px);
+    padding: 15px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 18px;
+    font-size: 16px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #00e0ff;
+}
+
+/* CONTAINER */
 .container {
     max-width: 1300px;
     margin: 60px auto;
+    padding: 30px;
 }
 
+/* TITLE */
+h1 {
+    text-align: center;
+    color: #00e0ff;
+    margin-bottom: 40px;
+}
+
+/* GRID - 4 IN ONE ROW */
 .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* FORCE 4 IN ONE ROW */
-    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 25px;
 }
 
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+    .grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* CARD */
 .card {
     background: rgba(255,255,255,0.08);
     border-radius: 15px;
     padding: 20px;
     backdrop-filter: blur(10px);
     box-shadow: 0 10px 40px rgba(0,0,0,0.4);
+    transition: 0.3s;
     text-align: center;
+}
+
+.card:hover {
+    transform: translateY(-5px);
 }
 
 .card img {
     width: 100%;
-    height: 150px;
+    height: 160px;
     object-fit: contain;
     background: white;
     border-radius: 10px;
@@ -44,8 +96,15 @@ body {
 
 .card h2 {
     color: #00e0ff;
+    margin-bottom: 10px;
 }
 
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+/* BUTTON */
 .btn {
     display: inline-block;
     margin-top: 15px;
@@ -55,49 +114,73 @@ body {
     font-weight: bold;
     border-radius: 6px;
     text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #00bcd4;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+    background: rgba(0,0,0,0.6);
+    font-size: 14px;
+    color: #ccc;
 }
 </style>
 </head>
 
 <body>
 
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="best-iptv.html">Best IPTV</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
 <div class="container">
+    <h1>Top IPTV Service Providers (2026)</h1>
+
     <div class="grid">
 
         <div class="card">
-            <img src="lumo.jpg" alt="Lumo IPTV">
-            <h2>Lumo IPTV</h2>
-            <p>19,000 Channels | 36 Hours Trial</p>
-            <p><strong>$14.99 / month</strong></p>
-            <a href="#" class="btn">View Details</a>
+            <img src="https://via.placeholder.com/400x200" alt="Magic 4K IPTV">
+            <h2>Magic 4K IPTV</h2>
+            <p>20,000+ channels | 24h Free Trial | $15/month</p>
+            <a href="#" target="_blank" class="btn">Visit Website</a>
         </div>
 
         <div class="card">
-            <img src="nigma.jpg" alt="Nigma TV">
+            <img src="https://via.placeholder.com/400x200" alt="Nigma TV">
             <h2>Nigma TV</h2>
-            <p>42,000 Channels | 24 Hours Trial</p>
-            <p><strong>$13.99 / month</strong></p>
-            <a href="#" class="btn">View Details</a>
+            <p>42,000+ channels | 24h Free Trial | $13.99/month</p>
+            <a href="#" target="_blank" class="btn">Visit Website</a>
         </div>
 
         <div class="card">
-            <img src="sphere.jpg" alt="Sphere IPTV">
+            <img src="https://via.placeholder.com/400x200" alt="Sphere IPTV">
             <h2>Sphere IPTV</h2>
-            <p>10,000 Channels | 24 Hours Trial</p>
-            <p><strong>$15.00 / month</strong></p>
-            <a href="#" class="btn">View Details</a>
+            <p>10,000+ channels | 24h Free Trial | $15/month</p>
+            <a href="#" target="_blank" class="btn">Visit Website</a>
         </div>
 
         <div class="card">
-            <img src="roca.jpg" alt="Roca IPTV">
-            <h2>Roca IPTV</h2>
-            <p>35,000 Channels | 24 Hours Trial</p>
-            <p><strong>£29.00 / 3 months</strong></p>
-            <a href="#" class="btn">View Details</a>
+            <img src="https://via.placeholder.com/400x200" alt="XLiveOn IPTV">
+            <h2>XLiveOn IPTV</h2>
+            <p>60,000+ channels | 24h Free Trial | $19/month</p>
+            <a href="#" target="_blank" class="btn">Visit Website</a>
         </div>
 
     </div>
 </div>
+
+<footer>
+    © 2026 Best IPTV Guide | All Rights Reserved
+</footer>
 
 </body>
 </html>
